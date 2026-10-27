@@ -137,6 +137,10 @@ figcaption {
     font-style: italic;
 }
 
+.resource-links {
+    display: flex;
+    gap: 1rem;
+}
 /* Footer */
 footer {
     margin-top: 2rem;
