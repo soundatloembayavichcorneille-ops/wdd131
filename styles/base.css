@@ -141,6 +141,38 @@ figcaption {
     display: flex;
     gap: 1rem;
 }
+
+
+/* Web Development Resources */
+
+.resources-card {
+    grid-column: 1 / -1;
+}
+
+.resource-list {
+    margin: 1rem 0 0 1.5rem;
+}
+
+.resource-list li {
+    margin-bottom: 0.8rem;
+}
+
+.resource-list a {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.resource-list a:hover,
+.resource-list a:focus-visible {
+    color: #000;
+    text-decoration: underline;
+}
+
+
+
+
+
 /* Footer */
 footer {
     margin-top: 2rem;
