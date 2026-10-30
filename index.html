@@ -1,148 +1,177 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Yavich Soundat's home page featuring web development, the Republic of the Congo, personal interests, and learning goals.">
+
     <meta name="author" content="Yavich SOUNDAT">
+
     <title>WDD 131 - Dynamic Web Fundamentals - Yavich Soundat</title>
 
-    
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
 
     <header>
         <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
-           <nav>
-        <a href="https://www.linkedin.com">LinkedIn</a>
-        <a href="https://byupw.instructure.com/">Canvas</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
-        <a href="#">Final Project</a>
-    </nav>
 
+        <nav>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
     </header>
+
     <main>
         <h1>Yavich Soundat</h1>
 
         <div class="cards">
+
+            <!-- About Me Card -->
             <section class="card about-card">
                 <h2>About Me</h2>
 
                 <div class="card-content">
-                    <p> My name is Yavich Soundat, and I am a student at
+
+                    <p>
+                        My name is Yavich Soundat, and I am a student at
                         BYU-Pathway Worldwide. I am developing my skills in
                         web development, programming, and technology.
                         I enjoy learning new things and using technology
-                        to solve practical problems.</p>
+                        to solve practical problems.
+                    </p>
 
-                    <img src="images/profile.webp" alt="personal photo of yavich" width="250" height="250">    
+                    <img src="images/profile.webp"
+                         alt="Personal photo of Yavich"
+                         width="250"
+                         height="250">
 
                 </div>
-
-                
             </section>
 
+            <!-- Republic of Congo Card -->
             <section class="card country-card">
                 <h2>Republic of Congo</h2>
 
                 <div class="card-content country-content">
+
                     <figure>
-                        <img src="images/congo-brazzaville.jpg" alt="landscape of congo" width="300" height="200">
-                        <figcaption>My country, the Republic of the congo </figcaption>
+                        <img src="images/congo-brazzaville.jpg"
+                             alt="Landscape of the Republic of Congo"
+                             width="300"
+                             height="200">
+
+                        <figcaption>
+                            My country, the Republic of the Congo
+                        </figcaption>
                     </figure>
+
                     <p>
-                     The Republic of Congo is located in Central Africa.
-                     Its capital city is Brazzaville.
-
+                        The Republic of Congo is located in Central Africa.
+                        Its capital city is Brazzaville.
                     </p>
-                     
-                    <div class="ressource-links">
-                    <a href="https://cg.usembassy.gov/">Republic of the Congo</a>
 
-                   <a href="https://www.byupathway.edu/">BYU-Pathway</a>
+                    <div class="resource-links">
 
-                 <a href="https://github.com/soundatloembayavichcorneille-ops">
-                 My GitHub Profile
-                </a>
-                <h2>Web Dev Resources</h2>
-                           <p>
-            These are some useful resources I use to improve
-            my knowledge and skills in web development.
-        </p>
+                        <a href="https://cg.usembassy.gov/">
+                            Republic of the Congo
+                        </a>
 
-        <ul class="resource-list">
-            <li>
-                <a href="https://developer.mozilla.org/en-US/docs/Web"
-                   target="_blank" rel="noopener noreferrer">
-                    MDN Web Docs
-                </a>
-                - Learn HTML, CSS, and JavaScript.
-            </li>
+                        <a href="https://www.byupathway.edu/">
+                            BYU-Pathway
+                        </a>
 
-            <li>
-                <a href="https://www.w3schools.com/"
-                   target="_blank" rel="noopener noreferrer">
-                    W3Schools
-                </a>
-                - Beginner-friendly web development tutorials.
-            </li>
-
-            <li>
-                <a href="https://www.freecodecamp.org/"
-                   target="_blank" rel="noopener noreferrer">
-                    freeCodeCamp
-                </a>
-                - Practice coding through interactive lessons.
-            </li>
-
-            <li>
-                <a href="https://css-tricks.com/"
-                   target="_blank" rel="noopener noreferrer">
-                    CSS-Tricks
-                </a>
-                - Learn CSS techniques and tips.
-            </li>
-
-            <li>
-                <a href="https://www.w3.org/"
-                   target="_blank" rel="noopener noreferrer">
-                    W3C
-                </a>
-                - Explore web standards.
-            </li>
-        </ul>
-    </div>
-
-                   
-
+                        <a href="https://github.com/soundatloembayavichcorneille-ops">
+                            My GitHub Profile
+                        </a>
 
                     </div>
-
                 </div>
+            </section>
 
+            <!-- Web Development Resources Card -->
+            <section class="card resources-card">
+                <h2>Web Dev Resources</h2>
+
+                <div class="card-content">
+
+                    <p>
+                        These are some useful resources I use to improve
+                        my knowledge and skills in web development.
+                    </p>
+
+                    <ul class="resource-list">
+
+                        <li>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                MDN Web Docs
+                            </a>
+                            - Learn HTML, CSS, and JavaScript.
+                        </li>
+
+                        <li>
+                            <a href="https://www.w3schools.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                W3Schools
+                            </a>
+                            - Beginner-friendly web development tutorials.
+                        </li>
+
+                        <li>
+                            <a href="https://www.freecodecamp.org/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                freeCodeCamp
+                            </a>
+                            - Practice coding through interactive lessons.
+                        </li>
+
+                        <li>
+                            <a href="https://css-tricks.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                CSS-Tricks
+                            </a>
+                            - Learn CSS techniques and tips.
+                        </li>
+
+                        <li>
+                            <a href="https://www.w3.org/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                W3C
+                            </a>
+                            - Explore web standards.
+                        </li>
+
+                    </ul>
+                </div>
             </section>
 
         </div>
     </main>
 
-
     <footer>
-          <p>
-        © <span id="currentyear"></span> | Yavich Soundat | Congo
-    </p>
+        <p>
+            © <span id="currentyear"></span> | Yavich Soundat | Congo
+        </p>
 
-    <p id="lastModified"></p>
-
+        <p id="lastModified"></p>
     </footer>
 
-
-    
 </body>
 </html>
