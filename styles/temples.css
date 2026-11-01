@@ -40,7 +40,7 @@ h2 {
     content: "✖";
 }
 
-.navigation {
+nav {
     display: flex;
     flex-direction: column;
 }
