@@ -1,100 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Temple Album</title>
+    <title>Temple Album</title>
 
-  <meta name="description" content="Explore a collection of beautiful temples from around the world in this responsive Temple Album created for WDD 131 Dynamic Web Fundamentals.">
-  <meta name="author" content="Yavich Soundat">
+    <meta name="description"
+        content="Explore a collection of beautiful temples from around the world in this responsive Temple Album created for WDD 131 Dynamic Web Fundamentals.">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="author" content="Yavich Soundat">
 
-  <link rel="stylesheet" href="styles/temples.css">
-  <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <script src="scripts/temples.js" defer></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/temples.css">
+
+    <link
+        rel="stylesheet"
+        href="styles/temples-large.css"
+        media="screen and (min-width:700px)">
+
+    <script src="scripts/temples.js" defer></script>
 </head>
 
 <body>
 
-<header>
-  <h1>Temple Album</h1>
+    <header>
+        <h1>Temple Album</h1>
 
-  <button id="menu"></button>
+        <button
+            id="menu"
+            aria-label="Navigation Menu"
+            aria-expanded="false">
+        </button>
 
-  <nav class="navigation">
-    <a href="#">Home</a>
-    <a href="#">Old</a>
-    <a href="#">New</a>
-    <a href="#">Large</a>
-    <a href="#">Small</a>
-  </nav>
-</header>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
 
-<main>
-  <h2>Temple Gallery</h2>
+    <main>
 
-  <div class="gallery">
+        <h2>Temple Gallery</h2>
 
-    <figure>
-      <img src="images/temple1.webp" alt="Aba Nigeria Temple" loading="lazy">
-      <figcaption>Aba Nigeria Temple</figcaption>
-    </figure>
+        <div class="gallery">
 
-    <figure>
-      <img src="images/temple2.jpeg" alt="Antofagasta Chile Temple" loading="lazy">
-      <figcaption>Antofagasta Chile Temple</figcaption>
-    </figure>
+            <figure>
+                <img
+                    src="images/temple1.webp"
+                    alt="Aba Nigeria Temple"
+                    width="799"
+                    height="500"
+                    loading="eager"
+                    fetchpriority="high">
+                <figcaption>Aba Nigeria Temple</figcaption>
+            </figure>
 
-    <figure>
-      <img src="images/temple3.jpeg" alt="Bern Switzerland Temple" loading="lazy">
-      <figcaption>Bern Switzerland Temple</figcaption>
-    </figure>
+            <figure>
+                <img
+                    src="images/temple2.jpeg"
+                    alt="Antofagasta Chile Temple"
+                    width="320"
+                    height="213"
+                    loading="lazy">
+                <figcaption>Antofagasta Chile Temple</figcaption>
+            </figure>
 
-    <figure>
-      <img src="images/temple4.webp" alt="London England Temple" loading="lazy">
-      <figcaption>London England Temple</figcaption>
-    </figure>
+            <figure>
+                <img
+                    src="images/temple3.jpeg"
+                    alt="Bern Switzerland Temple"
+                    width="800"
+                    height="600"
+                    loading="lazy">
+                <figcaption>Bern Switzerland Temple</figcaption>
+            </figure>
 
-    <figure>
-      <img src="images/temple5.webp" alt="Buenos Aires Argentina Temple" loading="lazy">
-      <figcaption>Buenos Aires Argentina Temple</figcaption>
-    </figure>
+            <figure>
+                <img
+                    src="images/temple4.webp"
+                    alt="London England Temple"
+                    width="800"
+                    height="500"
+                    loading="lazy">
+                <figcaption>London England Temple</figcaption>
+            </figure>
 
-    <figure>
-      <img src="images/temple6.webp" alt="Paris France Temple" loading="lazy">
-      <figcaption>Paris France Temple</figcaption>
-    </figure>
+            <figure>
+                <img
+                    src="images/temple5.webp"
+                    alt="Buenos Aires Argentina Temple"
+                    width="800"
+                    height="499"
+                    loading="lazy">
+                <figcaption>Buenos Aires Argentina Temple</figcaption>
+            </figure>
 
-    <figure>
-      <img src="images/temple7.jpg" alt="Salt Lake Temple" loading="lazy">
-      <figcaption>Salt Lake Temple</figcaption>
-    </figure>
+            <figure>
+                <img
+                    src="images/temple6.webp"
+                    alt="Paris France Temple"
+                    width="800"
+                    height="500"
+                    loading="lazy">
+                <figcaption>Paris France Temple</figcaption>
+            </figure>
 
-    <figure>
-      <img src="images/temple8.webp" alt="Rome Italy Temple" loading="lazy">
-      <figcaption>Rome Italy Temple</figcaption>
-    </figure>
+            <figure>
+                <img
+                    src="images/temple7.jpg"
+                    alt="Salt Lake Temple"
+                    width="320"
+                    height="200"
+                    loading="lazy">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
 
-    <figure>
-      <img src="images/temple9.webp" alt="Asuncion Paraguay Temple" loading="lazy">
-      <figcaption>Asuncion Paraguay Temple</figcaption>
-    </figure>
+            <figure>
+                <img
+                    src="images/temple8.webp"
+                    alt="Rome Italy Temple"
+                    width="800"
+                    height="533"
+                    loading="lazy">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
 
-  </div>
-</main>
+            <figure>
+                <img
+                    src="images/temple9.webp"
+                    alt="Asuncion Paraguay Temple"
+                    width="800"
+                    height="533"
+                    loading="lazy">
+                <figcaption>Asuncion Paraguay Temple</figcaption>
+            </figure>
 
-<footer>
-  <p>
-    © <span id="currentyear"></span> | Yavich Soundat | Congo
-  </p>
+        </div>
 
-  <p id="lastModified"></p>
-</footer>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="currentyear"></span> |
+            Yavich Soundat |
+            Congo
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
 
 </body>
 </html>
