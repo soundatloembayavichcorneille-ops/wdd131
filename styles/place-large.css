@@ -1,0 +1,36 @@
+@media screen and (min-width: 768px) {
+
+    main {
+        position: relative;
+    }
+
+    .hero img {
+        width: 100%;
+        min-height: 600px;
+        object-fit: cover;
+    }
+
+    .data {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        width: 320px;
+        background-color: rgba(255,255,255,0.98);
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        width: 320px;
+        background-color: rgba(255,255,255,0.98);
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+    }
+}

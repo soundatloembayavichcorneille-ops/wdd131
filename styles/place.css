@@ -1,0 +1,70 @@
+:root {
+    --primary-color: #004225;
+    --text-color: #111827;
+    --background-color: #f4f4f4;
+    --card-color: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero picture,
+.hero img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 16 / 9;
+}
+
+.card {
+    background-color: var(--card-color);
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--shadow);
+}
+
+.card h2 {
+    color: #00331a;
+    margin-bottom: 1rem;
+}
+
+.info-grid p {
+    margin-bottom: .5rem;
+    color: #111827;
+}
+
+.weather-icon {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: .25rem 0;
+}

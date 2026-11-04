@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the Republic of the Congo, its culture, geography, and weather.">
+
+    <title>Republic of the Congo</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Republic of the Congo</h1>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <picture>
+                <source
+                    media="(min-width: 768px)"
+                    srcset="images/congo-brazzaville-large.webp">
+
+                <img
+                    src="images/congo-brazzaville-small.webp"
+                    alt="Beautiful landscape in Brazzaville, Republic of the Congo"
+
+                     fetchpriority="high">
+            </picture>
+        </section>
+
+        <section class="card data">
+            <h2>Data</h2>
+
+            <div class="info-grid">
+                <p><strong>Area:</strong> 342,000 km²</p>
+                <p><strong>Population:</strong> 6.1 Million</p>
+                <p><strong>Capital:</strong> Brazzaville</p>
+                <p><strong>Languages:</strong> French, Lingala, Kituba</p>
+                <p><strong>Currency:</strong> Central African CFA Franc</p>
+                <p><strong>Time Zone:</strong> UTC +1</p>
+                <p><strong>Calling Code:</strong> +242</p>
+                <p><strong>Internet TLD:</strong> .cg</p>
+            </div>
+        </section>
+
+        <section class="card weather">
+            <h2>Weather</h2>
+
+            <img
+                src="images/weather.svg"
+                alt="Partly cloudy weather icon"
+                class="weather-icon"
+                width="70"
+                height="70">
+
+            <div class="info-grid">
+                <p><strong>Temperature:</strong> <span id="temperature">8</span> °C</p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind:</strong> <span id="windspeed">10</span> km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            | Yavich Soundat |
+            Republic of the Congo
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
