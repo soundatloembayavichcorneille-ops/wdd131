@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #1b365d;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation a {
+    display: none;
+    color: white;
+    text-decoration: none;
+    padding: .75rem;
+    text-align: center;
+}
+
+.navigation a:hover {
+    background-color: white;
+    color: #1b365d;
+}
+
+.open a {
+    display: block;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.gallery section {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+.gallery h3 {
+    color: #1b365d;
+    margin-bottom: .5rem;
+}
+
+.gallery p {
+    margin: .3rem 0;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-top: .5rem;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #1b365d;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
