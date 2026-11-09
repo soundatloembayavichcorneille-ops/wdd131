@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Share your product experience.">
+<meta name="author" content="Yavich Corneille Soundat Loemba">
+
+<title>Share Your Product Experience</title>
+
+<link rel="stylesheet" href="styles/form.css">
+<script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Share Your Product Experience</h1>
+</header>
+
+<main>
+
+    <p class="required-note">
+        * Required Fields
+    </p>
+
+    <form method="get" action="review.html">
+
+        <fieldset>
+            <legend>Product Information</legend>
+
+            <label for="productName">
+                Product Name *
+            </label>
+
+            <select
+                id="productName"
+                name="productName"
+                required>
+                <option value="" selected disabled>
+                    Select a Product ...
+                </option>
+            </select>
+
+            <label for="installDate">
+                Date of Installation *
+            </label>
+
+            <input
+                type="date"
+                id="installDate"
+                name="installDate"
+                required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Experience</legend>
+
+            <p class="field-label">
+                Overall Rating *
+            </p>
+
+            <label>
+                <input
+                    type="radio"
+                    id="rating1"
+                    name="rating"
+                    value="1"
+                    required>
+                ★
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    id="rating2"
+                    name="rating"
+                    value="2">
+                ★★
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    id="rating3"
+                    name="rating"
+                    value="3">
+                ★★★
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    id="rating4"
+                    name="rating"
+                    value="4">
+                ★★★★
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    id="rating5"
+                    name="rating"
+                    value="5">
+                ★★★★★
+            </label>
+
+            <p class="field-label">
+                Useful Features
+            </p>
+
+            <label>
+                <input
+                    type="checkbox"
+                    id="durability"
+                    name="features"
+                    value="Durability">
+                Durability
+            </label>
+
+            <label>
+                <input
+                    type="checkbox"
+                    id="ease"
+                    name="features"
+                    value="Ease of Use">
+                Ease of Use
+            </label>
+
+            <label>
+                <input
+                    type="checkbox"
+                    id="performance"
+                    name="features"
+                    value="Performance">
+                Performance
+            </label>
+
+            <label>
+                <input
+                    type="checkbox"
+                    id="design"
+                    name="features"
+                    value="Design">
+                Design
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Comments</legend>
+
+            <label for="writtenReview">
+                Written Review (Optional)
+            </label>
+
+            <textarea
+                id="writtenReview"
+                name="writtenReview"
+                rows="5"
+                placeholder="Tell us about your experience..."></textarea>
+
+            <label for="userName">
+                User Name (Optional)
+            </label>
+
+            <input
+                type="text"
+                id="userName"
+                name="userName"
+                placeholder="Enter your name">
+        </fieldset>
+
+        <input
+            type="submit"
+            class="submit-btn"
+            value="Share My Review">
+
+    </form>
+
+</main>
+
+<footer>
+    <p>
+        &copy;
+        <span id="currentyear"></span>
+        | Yavich Corneille Soundat Loemba
+        | Congo-Brazzaville
+    </p>
+
+    <p id="lastModified"></p>
+</footer>
+
+<script>
+document.querySelector("#currentyear").textContent =
+new Date().getFullYear();
+
+document.querySelector("#lastModified").textContent =
+`Last Modified: ${document.lastModified}`;
+</script>
+
+</body>
+</html>
