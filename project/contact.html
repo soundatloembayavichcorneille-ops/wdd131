@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Discover Congo</title>
+
+    <meta
+        name="description"
+        content="Contact Discover Congo and share your favorite traditional Congolese food.">
+
+    <link rel="stylesheet" href="styles/project.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/logo.webp"
+                 alt="Discover Congo logo">
+        </a>
+    </div>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="foods.html">Foods</a></li>
+            <li><a href="ingredients.html">Ingredients</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="contact-section">
+
+        <h1>Share Your Thoughts</h1>
+
+        <p>
+            We would love to hear about your favorite Congolese dish,
+            cooking experiences, or questions about traditional foods.
+        </p>
+
+        <form id="contactForm">
+
+            <label for="name">Full Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                required>
+
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required>
+
+            <fieldset>
+
+                <legend>Favorite Traditional Dish</legend>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="favoriteDish"
+                        value="Saka-Saka"
+                        required>
+                    Saka-Saka
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="favoriteDish"
+                        value="Chikwangue">
+                    Chikwangue
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="favoriteDish"
+                        value="Maboke">
+                    Maboke
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="favoriteDish"
+                        value="Poulet à la Moambe">
+                    Poulet à la Moambe
+                </label>
+
+            </fieldset>
+
+            <label for="messageArea">Message</label>
+
+            <textarea
+                id="messageArea"
+                name="message"
+                rows="6"
+                required></textarea>
+
+            <button type="submit">
+                Send Your Message
+            </button>
+
+        </form>
+
+        <p id="result"></p>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>&copy; 2026 Discover Congo: A Taste of Tradition</p>
+
+</footer>
+
+<script src="scripts/project.js"></script>
+
+</body>
+</html>
